@@ -128,3 +128,16 @@ div.title-bar {
     justify-content: space-between;
     align-items: center;
 }
+
+div#name-tag {
+    position: absolute;
+    z-index: 100;
+    border-radius: 6px;
+    top: 20px;
+    left: 20px;
+}
+
+div#name-tag p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
