@@ -1,0 +1,130 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    width: 100vw;
+    margin: 0px;
+    background-color: #000;
+}
+
+form#segment-switch {
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div#main-screen {
+    display: flex;
+}
+
+div#description {
+    width: 50vw;
+    background-color: #000;
+}
+
+div#model {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2, p {
+    color: white;
+    margin: 0px;
+}
+
+@keyframes test {
+  0%   {border-color: rgb(253, 175, 8);}
+  25%  {border-color: yellow;}
+  50%  {border-color: rgb(253, 175, 8);}
+  100% {border-color: yellow;}
+}
+
+div#inner-description {
+    width: 80%;
+    height: 80%;
+    margin: 80px auto 50px auto;
+    border: 2px solid rgb(253, 175, 8);
+    border-radius: 10px;
+    transition: animation, box-shadow 0.5s;
+    animation-name: test;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+div#inner-description:hover {
+    box-shadow: 0px 0px 5px 5px rgb(227, 230, 40);
+}
+
+.item {
+    width: 80%;
+    margin: 20px auto 0px auto;
+}
+
+.dropdown {
+    display: none;
+    border-top: 2px solid rgb(130, 130, 130);
+    width: 100%;
+}
+
+h2.title {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+
+canvas#percentPieChart {
+    background-color: white;
+    width: 300px !important;
+    height: auto !important;
+    display: none;
+    color: white;
+    border-radius: 6px;
+    margin: 10px auto 0 auto;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    background-color: white;
+    border-radius: 6px;
+    margin: 0 auto 0 auto;
+}
+
+h1#topic {
+    width: 80%;
+    margin: 20px auto 0px auto;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+p.text-content {
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Fonts */
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+svg {
+    color: white;
+}
+
+svg.expended {
+    color: #fbff00;
+}
+
+div.title-bar {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

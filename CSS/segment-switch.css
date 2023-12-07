@@ -1,0 +1,49 @@
+#segment-switch {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+#segment-switch div.switch-option {
+    height: 55px;
+    flex-basis: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#left-div {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#right-div {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#segment-switch label {
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+}
+
+#segment-switch div:has(.options) {
+    background-color: #474747;
+    opacity: 0.5;
+}
+
+#segment-switch div:has(.options:checked) {
+    color: black;
+    background-color: #f1f50f;
+    transition: background-color 0.5s, opacity 0.5s, color 0.5s;
+    opacity: 1;
+}
