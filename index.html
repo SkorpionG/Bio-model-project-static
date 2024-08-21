@@ -1,59 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Biology Model Project</title>
-    <link href="./CSS/style.css" rel="stylesheet" type="text/css"/>
-    <link href="./CSS/segment-switch.css" rel="stylesheet" type="text/css"/>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Noto+Sans:wght@400;700&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description"
+            content="2024 Clovis West High School Biology Class Final Project about the representation of the Carbon Cycle in the Earth as a model. Build By William Chou.">
+        <meta name="author" content="William Chou">
+        <title>Biology Model Project</title>
+        <link href="./CSS/style.css" rel="stylesheet" type="text/css" />
+        <link href="./CSS/segment-switch.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Noto+Sans:wght@400;700&family=Raleway&family=Roboto&display=swap"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <div id="name-tag">
-        <p>Build By William Chou</p>
-    </div>
-    
-    <form id="segment-switch">
-        <div id="left-div" class="switch-option">
-            <label for="primitive-earth">Primitive Earth</label>
-            <input class="options" id="primitive-earth" type="radio" name="switch" value="option1" checked>
+    <body>
+        <div id="name-tag">
+            <p>Build By William Chou</p>
         </div>
-        <div id="center-div-1" class="switch-option">
-            <label for="present-earth">Present Earth</label>
-            <input class="options" id="present-earth" type="radio" name="switch" value="option2">
+
+        <form id="segment-switch">
+            <div id="left-div" class="switch-option">
+                <label for="primitive-earth">Primitive Earth</label>
+                <input class="options" id="primitive-earth" type="radio" name="switch" value="option1" checked>
+            </div>
+            <div id="center-div-1" class="switch-option">
+                <label for="present-earth">Present Earth</label>
+                <input class="options" id="present-earth" type="radio" name="switch" value="option2">
+            </div>
+            <div id="center-div-2" class="switch-option">
+                <label for="photosynthesis">Photosynthesis</label>
+                <input class="options" id="photosynthesis" type="radio" name="switch" value="option3">
+            </div>
+            <div id="center-div-3" class="switch-option">
+                <label for="cellular-respiration">Cellular Respiration</label>
+                <input class="options" id="cellular-respiration" type="radio" name="switch" value="option3">
+            </div>
+            <div id="right-div" class="switch-option">
+                <label for="carbon-cycle">Carbon Cycle</label>
+                <input class="options" id="carbon-cycle" type="radio" name="switch" value="option5">
+            </div>
+        </form>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
+        <div id="main-screen">
+            <div id="description"></div>
+            <div id="model">
+                <!-- <spline-viewer loading-anim-type="none" url="https://prod.spline.design/2IBosMUYkzWNTSJz/scene.splinecode"></spline-viewer> -->
+                <!-- <spline-viewer url="https://prod.spline.design/vf52CYIfitgeGwFp/scene.splinecode"></spline-viewer> -->
+            </div>
         </div>
-        <div id="center-div-2" class="switch-option">
-            <label for="photosynthesis">Photosynthesis</label>
-            <input class="options" id="photosynthesis" type="radio" name="switch" value="option3">
-        </div>
-        <div id="center-div-3" class="switch-option">
-            <label for="cellular-respiration">Cellular Respiration</label>
-            <input class="options" id="cellular-respiration" type="radio" name="switch" value="option3">
-        </div>
-        <div id="right-div" class="switch-option">
-            <label for="carbon-cycle">Carbon Cycle</label>
-            <input class="options" id="carbon-cycle" type="radio" name="switch" value="option5">
-        </div>
-    </form>
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
-    <div id="main-screen">
-        <div id="description"></div>
-        <div id="model">
-            <!-- <spline-viewer loading-anim-type="none" url="https://prod.spline.design/2IBosMUYkzWNTSJz/scene.splinecode"></spline-viewer> -->
-            <!-- <spline-viewer url="https://prod.spline.design/vf52CYIfitgeGwFp/scene.splinecode"></spline-viewer> -->
-        </div>
-    </div>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./JS/index.js" type="module"></script>
-    
-  <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
-</body>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="./JS/index.js" type="module"></script>
+
+        <!-- <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script> -->
+    </body>
 
 </html>

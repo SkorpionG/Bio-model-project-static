@@ -1,6 +1,6 @@
 html {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -26,6 +26,10 @@ div#description {
     background-color: #000;
 }
 
+div#inner-description {
+    padding: 2rem 0;
+}
+
 div#model {
     width: 50vw;
     height: 100vh;
@@ -34,22 +38,34 @@ div#model {
     align-items: center;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
     color: white;
     margin: 0px;
 }
 
 @keyframes test {
-  0%   {border-color: rgb(253, 175, 8);}
-  25%  {border-color: yellow;}
-  50%  {border-color: rgb(253, 175, 8);}
-  100% {border-color: yellow;}
+    0% {
+        border-color: rgb(253, 175, 8);
+    }
+
+    25% {
+        border-color: yellow;
+    }
+
+    50% {
+        border-color: rgb(253, 175, 8);
+    }
+
+    100% {
+        border-color: yellow;
+    }
 }
 
 div#inner-description {
     width: 80%;
-    height: 80%;
-    margin: 80px auto 50px auto;
+    margin: 100px auto 50px auto;
     border: 2px solid rgb(253, 175, 8);
     border-radius: 10px;
     transition: animation, box-shadow 0.5s;
@@ -98,7 +114,7 @@ img {
 
 h1#topic {
     width: 80%;
-    margin: 20px auto 0px auto;
+    margin: 0 auto;
     color: white;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -140,4 +156,30 @@ div#name-tag {
 div#name-tag p {
     color: white;
     font-family: 'Raleway', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    div#main-screen {
+        flex-direction: column;
+    }
+
+    div#description {
+        width: 100%;
+    }
+
+    div#inner-description {
+        margin: 40px auto;
+        width: 90%;
+    }
+
+    div#model {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    div#name-tag {
+        bottom: 20px;
+        top: initial;
+    }
 }
