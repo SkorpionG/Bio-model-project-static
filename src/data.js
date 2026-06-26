@@ -20,7 +20,7 @@ export const perAC = {
 export const models = {
   primitiveEarthModel: `<spline-viewer url="https://prod.spline.design/vf52CYIfitgeGwFp/scene.splinecode"></spline-viewer>`,
   presentEarthModel: `<spline-viewer loading-anim-type="none" url="https://prod.spline.design/2IBosMUYkzWNTSJz/scene.splinecode"></spline-viewer>`,
-  photosynthesisModel: `<img id="cellularResp-model" alt="A diagram about photosynthesis" src="assets/Photosynthesis.drawio.png">`,
-  cellularRespModel: `<img id="photosynthesis-model" alt="A diagram about cellular respiration" src="assets/CellularRespiration.drawio.png">`,
-  carbonCycleModel: `<img id="carbonCycle-model" alt="A diagram about carbon cycle" src="assets/CarbonCycle.drawio.png">`,
+  photosynthesisModel: `<img id="cellularResp-model" alt="A diagram about photosynthesis" src="public/assets/Photosynthesis.drawio.png">`,
+  cellularRespModel: `<img id="photosynthesis-model" alt="A diagram about cellular respiration" src="public/assets/CellularRespiration.drawio.png">`,
+  carbonCycleModel: `<img id="carbonCycle-model" alt="A diagram about carbon cycle" src="public/assets/CarbonCycle.drawio.png">`,
 };
