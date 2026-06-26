@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background Earth Circle -->
+  <circle cx="256" cy="256" r="240" fill="#1e40af" stroke="#1d4ed8" stroke-width="8"/>
+  <!-- Earth Continents Stylized (Simplified) -->
+  <path d="M 120,240 Q 150,210 180,250 T 240,230 T 280,280 T 230,340 T 150,330 Z" fill="#2563eb" opacity="0.6"/>
+  <path d="M 320,180 Q 360,160 380,200 T 420,240 T 380,300 T 320,260 Z" fill="#2563eb" opacity="0.6"/>
+  <!-- Carbon Atom Orbits -->
+  <ellipse cx="256" cy="256" rx="200" ry="80" fill="none" stroke="#f1f5f9" stroke-width="12" transform="rotate(30, 256, 256)"/>
+  <ellipse cx="256" cy="256" rx="200" ry="80" fill="none" stroke="#f1f5f9" stroke-width="12" transform="rotate(90, 256, 256)"/>
+  <ellipse cx="256" cy="256" rx="200" ry="80" fill="none" stroke="#f1f5f9" stroke-width="12" transform="rotate(150, 256, 256)"/>
+  <!-- Orbit Electrons (small circles) -->
+  <circle cx="82" cy="156" r="16" fill="#f1f5f9"/>
+  <circle cx="430" cy="356" r="16" fill="#f1f5f9"/>
+  <circle cx="256" cy="56" r="16" fill="#f1f5f9"/>
+  <circle cx="256" cy="456" r="16" fill="#f1f5f9"/>
+  <circle cx="82" cy="356" r="16" fill="#f1f5f9"/>
+  <circle cx="430" cy="156" r="16" fill="#f1f5f9"/>
+  <!-- Center White Circle to highlight leaf -->
+  <circle cx="256" cy="256" r="90" fill="#ffffff" stroke="#cbd5e1" stroke-width="6"/>
+  <!-- Leaf in the center -->
+  <path d="M 256,180 C 210,210 210,285 256,320 C 302,285 302,210 256,180 Z" fill="#22c55e"/>
+  <!-- Leaf center vein -->
+  <path d="M 256,190 L 256,310" stroke="#15803d" stroke-width="6" stroke-linecap="round"/>
+  <!-- Leaf side veins -->
+  <path d="M 256,230 Q 240,220 230,225" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 256,230 Q 272,220 282,225" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 256,260 Q 236,250 226,258" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 256,260 Q 276,250 286,258" stroke="#15803d" stroke-width="4" stroke-linecap="round" fill="none"/>
+</svg>
