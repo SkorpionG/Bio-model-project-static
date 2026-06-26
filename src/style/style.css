@@ -1,127 +1,129 @@
 html {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    width: 100vw;
-    margin: 0px;
-    background-color: #000;
+  width: 100vw;
+  margin: 0px;
+  background-color: #000;
 }
 
 form#segment-switch {
-    z-index: 100;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 div#main-screen {
-    display: flex;
+  display: flex;
 }
 
 div#description {
-    width: 50vw;
-    background-color: #000;
+  width: 50vw;
+  background-color: #000;
 }
 
 div#inner-description {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 div#model {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
 h2,
 p {
-    color: white;
-    margin: 0px;
+  color: white;
+  margin: 0px;
 }
 
 @keyframes test {
-    0% {
-        border-color: rgb(253, 175, 8);
-    }
+  0% {
+    border-color: rgb(253, 175, 8);
+  }
 
-    25% {
-        border-color: yellow;
-    }
+  25% {
+    border-color: yellow;
+  }
 
-    50% {
-        border-color: rgb(253, 175, 8);
-    }
+  50% {
+    border-color: rgb(253, 175, 8);
+  }
 
-    100% {
-        border-color: yellow;
-    }
+  100% {
+    border-color: yellow;
+  }
 }
 
 div#inner-description {
-    width: 80%;
-    margin: 100px auto 50px auto;
-    border: 2px solid rgb(253, 175, 8);
-    border-radius: 10px;
-    transition: animation, box-shadow 0.5s;
-    animation-name: test;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+  width: 80%;
+  margin: 100px auto 50px auto;
+  border: 2px solid rgb(253, 175, 8);
+  border-radius: 10px;
+  transition:
+    animation,
+    box-shadow 0.5s;
+  animation-name: test;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
 }
 
 div#inner-description:hover {
-    box-shadow: 0px 0px 5px 5px rgb(227, 230, 40);
+  box-shadow: 0px 0px 5px 5px rgb(227, 230, 40);
 }
 
 .item {
-    width: 80%;
-    margin: 20px auto 0px auto;
+  width: 80%;
+  margin: 20px auto 0px auto;
 }
 
 .dropdown {
-    display: none;
-    border-top: 2px solid rgb(130, 130, 130);
-    width: 100%;
+  display: none;
+  border-top: 2px solid rgb(130, 130, 130);
+  width: 100%;
 }
 
 h2.title {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 400;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
 }
 
 canvas#percentPieChart {
-    background-color: white;
-    width: 300px !important;
-    height: auto !important;
-    display: none;
-    color: white;
-    border-radius: 6px;
-    margin: 10px auto 0 auto;
+  background-color: white;
+  width: 300px !important;
+  height: auto !important;
+  display: none;
+  color: white;
+  border-radius: 6px;
+  margin: 10px auto 0 auto;
 }
 
 img {
-    width: 90%;
-    height: auto;
-    background-color: white;
-    border-radius: 6px;
-    margin: 0 auto 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  border-radius: 6px;
+  margin: 0 auto 0 auto;
 }
 
 h1#topic {
-    width: 80%;
-    margin: 0 auto;
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 p.text-content {
-    margin-top: 5px;
-    font-family: 'Raleway', sans-serif;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Fonts */
@@ -131,55 +133,55 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 svg {
-    color: white;
+  color: white;
 }
 
 svg.expended {
-    color: #fbff00;
+  color: #fbff00;
 }
 
 div.title-bar {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 div#name-tag {
-    position: absolute;
-    z-index: 100;
-    border-radius: 6px;
-    top: 20px;
-    left: 20px;
+  position: absolute;
+  z-index: 100;
+  border-radius: 6px;
+  top: 20px;
+  left: 20px;
 }
 
 div#name-tag p {
-    color: white;
-    font-family: 'Raleway', sans-serif;
+  color: white;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media screen and (max-width: 1000px) {
-    div#main-screen {
-        flex-direction: column;
-    }
+  div#main-screen {
+    flex-direction: column;
+  }
 
-    div#description {
-        width: 100%;
-    }
+  div#description {
+    width: 100%;
+  }
 
-    div#inner-description {
-        margin: 40px auto;
-        width: 90%;
-    }
+  div#inner-description {
+    margin: 40px auto;
+    width: 90%;
+  }
 
-    div#model {
-        width: 100%;
-        height: auto;
-        margin-bottom: 2rem;
-    }
+  div#model {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
 
-    div#name-tag {
-        bottom: 20px;
-        top: initial;
-    }
+  div#name-tag {
+    bottom: 20px;
+    top: initial;
+  }
 }

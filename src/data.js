@@ -1,20 +1,13 @@
 export const priAC = {
-  labels: [
-    "Nitrogen",
-    "Carbon Dioxide",
-    "Oxygen",
-    "Hydrogen",
-    "Water Vapor",
-    "Sulfur Oxide",
-  ],
+  labels: ['Nitrogen', 'Carbon Dioxide', 'Oxygen', 'Hydrogen', 'Water Vapor', 'Sulfur Oxide'],
   data: [5, 12, 0, 0.4, 74, 9],
-  backgroundColor: ["red", "orange", "green", "blue", "skyblue", "purple"],
+  backgroundColor: ['red', 'orange', 'green', 'blue', 'skyblue', 'purple'],
 };
 
 export const perAC = {
-  labels: ["Nitrogen", "Carbon Dioxide", "Oxygen", "Argon"],
+  labels: ['Nitrogen', 'Carbon Dioxide', 'Oxygen', 'Argon'],
   data: [78, 0.04, 21, 0.93],
-  backgroundColor: ["red", "blue", "green", "yellow"],
+  backgroundColor: ['red', 'blue', 'green', 'yellow'],
 };
 
 export const models = {

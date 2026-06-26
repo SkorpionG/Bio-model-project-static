@@ -1,6 +1,8 @@
 {
   "snyk.advanced.autoSelectOrganization": false,
-  "specstory.cloudSync.enabled": "never",
-  "specstory.helpUsImprove": false,
-  "specstory.autoSave.enabled": false
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }

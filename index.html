@@ -1,97 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An interactive 3D model comparing the Carbon Cycle on primitive and present-day Earth, featuring detailed simulations of photosynthesis and cellular respiration. Built by William Chou."
+    />
+    <meta name="author" content="William Chou" />
+    <meta name="creator" content="William Chou" />
+    <meta name="publisher" content="William Chou" />
+    <meta name="application-name" content="Carbon Cycle Model" />
+    <meta
+      name="keywords"
+      content="Biology, Carbon Cycle, Primitive Earth, Present Earth, Photosynthesis, Cellular Respiration, 3D Model, Interactive"
+    />
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="An interactive 3D model comparing the Carbon Cycle on primitive and present-day Earth, featuring detailed simulations of photosynthesis and cellular respiration. Built by William Chou.">
-        <meta name="author" content="William Chou">
-        <meta name="creator" content="William Chou" />
-        <meta name="publisher" content="William Chou" />
-        <meta name="application-name" content="Carbon Cycle Model" />
-        <meta name="keywords" content="Biology, Carbon Cycle, Primitive Earth, Present Earth, Photosynthesis, Cellular Respiration, 3D Model, Interactive" />
-        
-        <!-- Search Engine Indexing (Disabled by default; comment out "none" and uncomment "index, follow" to allow indexing) -->
-        <meta name="robots" content="none" />
-        <!-- <meta name="robots" content="index, follow" /> -->
+    <!-- Search Engine Indexing (Disabled by default; comment out "none" and uncomment "index, follow" to allow indexing) -->
+    <meta name="robots" content="none" />
+    <!-- <meta name="robots" content="index, follow" /> -->
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://skorpiong.github.io/Bio-model-project-static/" />
-        <meta property="og:title" content="Interactive 3D Carbon Cycle Model | Biology Project" />
-        <meta property="og:description" content="Explore an interactive 3D representation comparing the Carbon Cycle of primitive and present Earth. Learn about photosynthesis and cellular respiration." />
-        <meta property="og:image" content="https://skorpiong.github.io/Bio-model-project-static/public/assets/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="A 3D visualization of Earth showing the cycles of carbon between atmosphere, land, and water." />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Carbon Cycle 3D Model" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://skorpiong.github.io/Bio-model-project-static/" />
+    <meta property="og:title" content="Interactive 3D Carbon Cycle Model | Biology Project" />
+    <meta
+      property="og:description"
+      content="Explore an interactive 3D representation comparing the Carbon Cycle of primitive and present Earth. Learn about photosynthesis and cellular respiration."
+    />
+    <meta
+      property="og:image"
+      content="https://skorpiong.github.io/Bio-model-project-static/public/assets/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="A 3D visualization of Earth showing the cycles of carbon between atmosphere, land, and water."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Carbon Cycle 3D Model" />
 
-        <!-- Twitter -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://skorpiong.github.io/Bio-model-project-static/" />
-        <meta name="twitter:title" content="Interactive 3D Carbon Cycle Model | Biology Project" />
-        <meta name="twitter:description" content="Explore an interactive 3D representation comparing the Carbon Cycle of primitive and present Earth. Learn about photosynthesis and cellular respiration." />
-        <meta name="twitter:image" content="https://skorpiong.github.io/Bio-model-project-static/public/assets/og-image.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://skorpiong.github.io/Bio-model-project-static/" />
+    <meta name="twitter:title" content="Interactive 3D Carbon Cycle Model | Biology Project" />
+    <meta
+      name="twitter:description"
+      content="Explore an interactive 3D representation comparing the Carbon Cycle of primitive and present Earth. Learn about photosynthesis and cellular respiration."
+    />
+    <meta
+      name="twitter:image"
+      content="https://skorpiong.github.io/Bio-model-project-static/public/assets/og-image.png"
+    />
 
-        <!-- Favicons and App Icons -->
-        <link rel="icon" href="./public/favicon.ico" sizes="32x32" />
-        <link rel="icon" href="./public/assets/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="./public/assets/apple-touch-icon.png" />
-        <link rel="manifest" href="./public/site.webmanifest" />
+    <!-- Favicons and App Icons -->
+    <link rel="icon" href="./public/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./public/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./public/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="./public/site.webmanifest" />
 
-        <title>Interactive 3D Carbon Cycle Model | Biology Project</title>
+    <title>Interactive 3D Carbon Cycle Model | Biology Project</title>
 
-        <link href="./src/style/style.css" rel="stylesheet" type="text/css" />
-        <link href="./src/style/segment-switch.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Noto+Sans:wght@400;700&family=Raleway&family=Roboto&display=swap"
-            rel="stylesheet">
-    </head>
+    <link href="./src/style/style.css" rel="stylesheet" type="text/css" />
+    <link href="./src/style/segment-switch.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Noto+Sans:wght@400;700&family=Raleway&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <body>
-        <div id="name-tag">
-            <p>Build By William Chou</p>
-        </div>
+  <body>
+    <div id="name-tag">
+      <p>Build By William Chou</p>
+    </div>
 
-        <form id="segment-switch">
-            <div id="left-div" class="switch-option">
-                <label for="primitive-earth">Primitive Earth</label>
-                <input class="options" id="primitive-earth" type="radio" name="switch" value="option1" checked>
-            </div>
-            <div id="center-div-1" class="switch-option">
-                <label for="present-earth">Present Earth</label>
-                <input class="options" id="present-earth" type="radio" name="switch" value="option2">
-            </div>
-            <div id="center-div-2" class="switch-option">
-                <label for="photosynthesis">Photosynthesis</label>
-                <input class="options" id="photosynthesis" type="radio" name="switch" value="option3">
-            </div>
-            <div id="center-div-3" class="switch-option">
-                <label for="cellular-respiration">Cellular Respiration</label>
-                <input class="options" id="cellular-respiration" type="radio" name="switch" value="option3">
-            </div>
-            <div id="right-div" class="switch-option">
-                <label for="carbon-cycle">Carbon Cycle</label>
-                <input class="options" id="carbon-cycle" type="radio" name="switch" value="option5">
-            </div>
-        </form>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"></script>
-        <div id="main-screen">
-            <div id="description"></div>
-            <div id="model">
-                <!-- <spline-viewer loading-anim-type="none" url="https://prod.spline.design/2IBosMUYkzWNTSJz/scene.splinecode"></spline-viewer> -->
-                <!-- <spline-viewer url="https://prod.spline.design/vf52CYIfitgeGwFp/scene.splinecode"></spline-viewer> -->
-            </div>
-        </div>
+    <form id="segment-switch">
+      <div id="left-div" class="switch-option">
+        <label for="primitive-earth">Primitive Earth</label>
+        <input
+          class="options"
+          id="primitive-earth"
+          type="radio"
+          name="switch"
+          value="option1"
+          checked
+        />
+      </div>
+      <div id="center-div-1" class="switch-option">
+        <label for="present-earth">Present Earth</label>
+        <input class="options" id="present-earth" type="radio" name="switch" value="option2" />
+      </div>
+      <div id="center-div-2" class="switch-option">
+        <label for="photosynthesis">Photosynthesis</label>
+        <input class="options" id="photosynthesis" type="radio" name="switch" value="option3" />
+      </div>
+      <div id="center-div-3" class="switch-option">
+        <label for="cellular-respiration">Cellular Respiration</label>
+        <input
+          class="options"
+          id="cellular-respiration"
+          type="radio"
+          name="switch"
+          value="option3"
+        />
+      </div>
+      <div id="right-div" class="switch-option">
+        <label for="carbon-cycle">Carbon Cycle</label>
+        <input class="options" id="carbon-cycle" type="radio" name="switch" value="option5" />
+      </div>
+    </form>
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer@0.9.518/build/spline-viewer.js"
+    ></script>
+    <div id="main-screen">
+      <div id="description"></div>
+      <div id="model">
+        <!-- <spline-viewer loading-anim-type="none" url="https://prod.spline.design/2IBosMUYkzWNTSJz/scene.splinecode"></spline-viewer> -->
+        <!-- <spline-viewer url="https://prod.spline.design/vf52CYIfitgeGwFp/scene.splinecode"></spline-viewer> -->
+      </div>
+    </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="./src/index.js" type="module"></script>
-    </body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./src/index.js" type="module"></script>
+  </body>
 </html>
