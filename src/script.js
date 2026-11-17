@@ -115,3 +115,38 @@ export function insertCanvas(insertAt) {
     }
   }
 }
+
+export function updateDynamicMetaTags() {
+  try {
+    const url = new URL(window.location.href);
+    url.hash = '';
+    url.search = '';
+
+    let pageUrl = url.href;
+    if (url.pathname.endsWith('/index.html')) {
+      pageUrl = url.href.slice(0, -'index.html'.length);
+    }
+
+    const baseUrl = new URL('./', url.href);
+    const ogImageUrl = new URL('public/assets/og-image.png', baseUrl).href;
+
+    const setMeta = (selector, value) => {
+      const el = document.querySelector(selector);
+      if (el) {
+        el.setAttribute('content', value);
+      }
+    };
+
+    setMeta('meta[property="og:url"]', pageUrl);
+    setMeta('meta[name="twitter:url"]', pageUrl);
+    setMeta('meta[property="og:image"]', ogImageUrl);
+    setMeta('meta[name="twitter:image"]', ogImageUrl);
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute('href', pageUrl);
+    }
+  } catch (error) {
+    console.error('Failed to update dynamic meta tags:', error);
+  }
+}

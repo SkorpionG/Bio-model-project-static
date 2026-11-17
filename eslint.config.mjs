@@ -14,6 +14,7 @@ export default [
         console: 'readonly',
         $: 'readonly',
         Chart: 'readonly',
+        URL: 'readonly',
       },
     },
   },

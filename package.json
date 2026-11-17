@@ -1,10 +1,9 @@
 {
   "name": "bio-model-project-static",
   "version": "1.0.0",
-  "description": "This repository contains the source code for an interactive web-based 3D model of the Earth's Carbon Cycle. It was originally developed as a final project for a high school biology class at Clovis West High School by William Chou. The application provides a visual representation of the carbon cycle, comparing primitive Earth to present-day Earth, and detailing key biological processes like photosynthesis and cellular respiration.",
-  "main": "index.js",
+  "description": "This repository contains the source code for an interactive web-based 3D model of the Earth's Carbon Cycle. It was originally developed as a final project for a high school biology class. The application provides a visual representation of the carbon cycle, comparing primitive Earth to present-day Earth, and detailing key biological processes like photosynthesis and cellular respiration.",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint src/**/*.js",
@@ -17,8 +16,7 @@
     "url": "git+https://github.com/SkorpionG/Bio-model-project-static.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "SkorpionG",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/SkorpionG/Bio-model-project-static/issues"
@@ -26,10 +24,10 @@
   "homepage": "https://github.com/SkorpionG/Bio-model-project-static#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "eslint": "^10.5.0",
+    "eslint": "^10.15.0",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
-    "prettier": "^3.8.5"
+    "lint-staged": "^17.6.1",
+    "prettier": "^3.10.1"
   }
 }

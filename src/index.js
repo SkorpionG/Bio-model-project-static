@@ -1,4 +1,10 @@
-import { addLabel, createPieChart, generateDescription, insertCanvas } from './script.js';
+import {
+  addLabel,
+  createPieChart,
+  generateDescription,
+  insertCanvas,
+  updateDynamicMetaTags,
+} from './script.js';
 import { priAC, perAC, models } from './data.js';
 import {
   primitiveEarth,
@@ -47,6 +53,8 @@ const carbonCycleDescription = generateDescription(
 );
 
 $(document).ready(function () {
+  updateDynamicMetaTags();
+
   function initSegmentSwitch() {
     const options = document.querySelectorAll('.switch-option');
     const inputs = document.querySelectorAll('.options');

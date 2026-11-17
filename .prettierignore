@@ -1,2 +1,4 @@
 node_modules/
 public/assets/
+package-lock.json
+.husky/_/
