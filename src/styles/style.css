@@ -92,7 +92,7 @@ div#inner-description:hover {
 }
 
 h2.title {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 400;
 }
 
@@ -118,12 +118,12 @@ h1#topic {
   width: 80%;
   margin: 0 auto;
   color: white;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 p.text-content {
   margin-top: 5px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* Fonts */
@@ -157,7 +157,7 @@ div#name-tag {
 
 div#name-tag p {
   color: white;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 @media screen and (max-width: 1000px) {

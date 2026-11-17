@@ -4,6 +4,6 @@
     "ritwickdey.liveserver",
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    "EditorConfig.EditorConfig"
+    "editorconfig.editorconfig"
   ]
 }

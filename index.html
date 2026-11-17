@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -16,8 +17,8 @@
       content="Biology, Carbon Cycle, Primitive Earth, Present Earth, Photosynthesis, Cellular Respiration, 3D Model, Interactive"
     />
 
-    <!-- Search Engine Indexing (Disabled by default; comment out "none" and uncomment "index, follow" to allow indexing) -->
-    <meta name="robots" content="none" />
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="noindex, nofollow" />
     <!-- <meta name="robots" content="index, follow" /> -->
     <link rel="canonical" href="https://skorpiong.github.io/Bio-model-project-static/" />
 
@@ -31,7 +32,7 @@
     />
     <meta
       property="og:image"
-      content="https://skorpiong.github.io/Bio-model-project-static/public/assets/og-image.png"
+      content="https://skorpiong.github.io/Bio-model-project-static/public/og-image.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -52,7 +53,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://skorpiong.github.io/Bio-model-project-static/public/assets/og-image.png"
+      content="https://skorpiong.github.io/Bio-model-project-static/public/twitter-image.png"
     />
     <meta
       name="twitter:image:alt"
@@ -61,15 +62,17 @@
 
     <!-- Favicons and App Icons -->
     <link rel="icon" href="./public/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="./public/assets/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./public/assets/apple-touch-icon.png" />
+    <link rel="icon" href="./public/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./public/apple-touch-icon.png" />
     <link rel="manifest" href="./public/site.webmanifest" />
 
     <title>Interactive 3D Carbon Cycle Model | Biology Project</title>
 
+    <!-- Stylesheets & Scripts -->
     <link href="./src/styles/style.css" rel="stylesheet" type="text/css" />
     <link href="./src/styles/segment-switch.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script type="module" src="./src/metadata-sync.js"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

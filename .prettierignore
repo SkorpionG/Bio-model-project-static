@@ -1,4 +1,15 @@
 node_modules/
-public/assets/
-package-lock.json
+.git/
 .husky/_/
+.specstory/
+.gemini/
+.vscode/
+package-lock.json
+*.map
+public/assets/
+public/icons/
+*.png
+*.jpg
+*.jpeg
+*.ico
+*.svg
